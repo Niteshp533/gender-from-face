@@ -1,21 +1,18 @@
-Project name: Gender Detection
-Description: This project uses machine learning to detect the gender of a person in a photo.
-Requirements: Python 3, OpenCV, and TensorFlow
-Install the required packages:
-    pip install tensorflow
-    pip install opencv-python
-    pip install cvlib
-Run the code:
-    python gender_detection.py
-The output will be a window with the photo and the predicted gender.
-Known limitations:
-    The model is not perfect and may not always be accurate.
-    The model only works for faces that are facing the camera and are well-lit.
-Links to related resources:
-    TensorFlow: https://www.tensorflow.org/
-    OpenCV: https://opencv.org/
-    cvlib: https://github.com/arunponnusamy/cvlib
-
-The project first uses OpenCV to detect faces in the image. Once the faces have been detected, the project uses cvlib to detect the gender of each face. The gender is then overlaid on the image.
-
 # gender-from-face
+
+Gender-from-face is the process of determining the gender of a person from their facial features. This can be done using a variety of methods, including machine learning algorithms and statistical analysis.
+
+# Installing the required packages
+
+To install the required packages, you can run the following commands:
+
+pip install opencv-python
+pip install cvlib
+pip install tensorflow
+!conda install -c conda-forge keras --yes
+
+Note: The !conda install command is only necessary if you are using the Anaconda distribution of Python. If you are not using Anaconda, you can ignore this command.
+
+# Limitations of the code
+
+The code works well for images with a single face. However, it may not work as well for images with multiple faces. Additionally, the accuracy of the gender detection may depend on the quality of the image.
